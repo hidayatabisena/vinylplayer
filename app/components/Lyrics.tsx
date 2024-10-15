@@ -24,16 +24,16 @@ export default function Lyrics() {
         <h2 style={{ fontWeight: 700 }}>verse 1 & 2</h2>
         <p>
           If a picture paints a thousand words,<br />
-          Then why can't I paint you?<br />
+          Then why can&apos;t I paint you?<br />
           The words will never show,<br />
-          The you I've come to know.
+          The you I&apos;ve come to know.
         </p>
         <br />
         <p>
           If a face could launch a thousand ships,<br />
           Then where am I to go?<br />
-          There's no one home but you,<br />
-          You're all that's left me too.
+          There&apos;s no one home but you,<br />
+          You&apos;re all that&apos;s left me too.
         </p>
         <br />
         <p>

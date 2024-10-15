@@ -6,7 +6,7 @@ export default function SecondLyrics() {
       <h2>verse 3</h2>
       <p>
       If a man could be two places at once,<br />
-      I’d be with you,<br />
+      I&apos;d be with you,<br />
       Tomorrow and today,<br />
       Beside you all the way.
       </p>
@@ -14,7 +14,7 @@ export default function SecondLyrics() {
       <p>
       If the world should stop revolving,<br />
       Spinning slowly down to die,<br />
-      I’d spend the end with you,<br />
+      I&apos;d spend the end with you,<br />
       And when the world was through, <br />
       </p>
       <br />

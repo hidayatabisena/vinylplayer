@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { ShaderMaterial, Vector2, OrthographicCamera } from 'three'
+import { ShaderMaterial, Vector2 } from 'three'
 
 const MeshGradientMaterial = new ShaderMaterial({
   uniforms: {

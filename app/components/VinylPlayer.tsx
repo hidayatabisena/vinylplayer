@@ -16,9 +16,7 @@ export default function VinylPlayer() {
   const playerRef = useRef<HTMLDivElement>(null)
   const soundRef = useRef<Howl | null>(null)
   const [isLoaded, setIsLoaded] = useState<boolean>(false)
-  const [isVisible, setIsVisible] = useState<boolean>(false)
-  const [coverAnimationComplete, setCoverAnimationComplete] = useState(false);
-  const [vinylVisible, setVinylVisible] = useState(false);
+  const [vinylVisible, setVinylVisible] = useState<boolean>(false);
 
   useEffect(() => {
     Howler.autoUnlock = false;
@@ -28,7 +26,6 @@ export default function VinylPlayer() {
       onend: () => setIsPlaying(false),
       onload: () => {
         setIsLoaded(true);
-        setIsVisible(true);
       },
       onloaderror: (id, error) => console.error('Error loading audio:', error)
     });
@@ -39,13 +36,6 @@ export default function VinylPlayer() {
       }
     }
   }, [])
-
-  useEffect(() => {
-    if (coverAnimationComplete) {
-      const timer = setTimeout(() => setVinylVisible(true), 100);
-      return () => clearTimeout(timer);
-    }
-  }, [coverAnimationComplete]);
 
   const togglePlay = () => {
     if (soundRef.current && isLoaded) {
@@ -59,8 +49,8 @@ export default function VinylPlayer() {
   }
 
   const handleCoverClick = () => {
-    setVinylVisible(true); 
-    togglePlay(); 
+    setVinylVisible(true); // Show the vinyl when the cover is clicked
+    togglePlay(); // Play or pause the audio
   }
 
   return (
