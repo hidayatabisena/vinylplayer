@@ -1,5 +1,7 @@
 # Vinyl Player App
 
+![Kafkaway picture](https://res.cloudinary.com/moyadev/image/upload/v1729002425/sena/kafkaway_h4lkmf.png)
+
 ## Overview
 
 The Vinyl Player App is a web application that simulates a vinyl record player experience. It allows users to play audio tracks while displaying animated vinyl and cover art. The app is built using Next.js, React, and Howler.js for audio management.

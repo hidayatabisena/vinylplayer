@@ -58,10 +58,9 @@ export default function VinylPlayer() {
     }
   }
 
-  // New function to handle cover click
   const handleCoverClick = () => {
-    setVinylVisible(true); // Show the vinyl when the cover is clicked
-    togglePlay(); // Play or pause the audio
+    setVinylVisible(true); 
+    togglePlay(); 
   }
 
   return (
@@ -103,10 +102,10 @@ export default function VinylPlayer() {
           alt="Album Cover"
           width={320}  
           height={320} 
-          onClick={handleCoverClick} // Change the click handler to the cover
+          onClick={handleCoverClick} 
           style={{
             position: 'absolute',
-            top: '-15px',    
+            top: '-4px',    
             left: '-160px', 
             zIndex: 2,
             boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)' 
