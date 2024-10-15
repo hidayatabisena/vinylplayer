@@ -27,7 +27,10 @@ export default function VinylPlayer() {
       onload: () => {
         setIsLoaded(true);
       },
-      onloaderror: (id, error) => console.error('Error loading audio:', error)
+      onloaderror: (id, error) => {
+        console.error('Error loading audio:', error);
+        alert('Failed to load audio. Please check the file path.');
+      }
     });
 
     return () => {
@@ -49,8 +52,8 @@ export default function VinylPlayer() {
   }
 
   const handleCoverClick = () => {
-    setVinylVisible(true); // Show the vinyl when the cover is clicked
-    togglePlay(); // Play or pause the audio
+    setVinylVisible(true); 
+    togglePlay(); 
   }
 
   return (
