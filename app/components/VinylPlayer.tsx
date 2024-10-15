@@ -22,15 +22,12 @@ export default function VinylPlayer() {
     Howler.autoUnlock = false;
     
     soundRef.current = new Howl({
-      src: ['/audio/if.mp3'],
+      src: ['/audio/If.mp3'],
       onend: () => setIsPlaying(false),
       onload: () => {
         setIsLoaded(true);
       },
-      onloaderror: (id, error) => {
-        console.error('Error loading audio:', error);
-        alert('Failed to load audio. Please check the file path.');
-      }
+      onloaderror: (id, error) => console.error('Error loading audio:', error)
     });
 
     return () => {
