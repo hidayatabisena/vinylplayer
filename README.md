@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vinyl Player App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+The Vinyl Player App is a web application that simulates a vinyl record player experience. It allows users to play audio tracks while displaying animated vinyl and cover art. The app is built using Next.js, React, and Howler.js for audio management.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Play and pause audio tracks by clicking on the vinyl record.
+- Animated vinyl rotation while the audio is playing.
+- Display of album cover art with a slight overlap on the vinyl.
+- Responsive design with a modern UI.
+- Uses Google Fonts for typography.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **React**: A JavaScript library for building user interfaces.
+- **Howler.js**: A JavaScript audio library for managing audio playback.
+- **Next/Image**: Optimized image component for better performance.
+- **CSS**: For styling and animations.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/hidayatabisena/vinyl-player-app.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
 
-## Deploy on Vercel
+   ```bash
+   cd vinyl-player-app
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install the dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+4. Add your audio file (`if.mp3`) and SVG assets (`vinyl.svg`, `cover.svg`) to the `public` directory.
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+- Click on the vinyl record to play or pause the audio.
+- The vinyl will rotate while the audio is playing, and the album cover will be displayed slightly overlapping the vinyl.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the creators of [Next.js](https://nextjs.org/) and [Howler.js](https://howlerjs.com/) for their amazing libraries.
+- Special thanks to the designers of the vinyl and cover SVG assets.
